@@ -49,9 +49,10 @@ public class Exer1Controller {
 					   String[] vetLinha = linha.split(",");
 	                    for(int i =0; i < 1; i++) {
 	                        if(linha.contains("fruits")) {
-	                            System.out.print(vetLinha[0] + "\t ");
-	                            System.out.print(vetLinha[1] + "\t ");
-	                            System.out.print(vetLinha[3] + "\t \n");
+	                        	
+	                        	if(i ==2) continue;
+	                        	
+	                            System.out.println("Fruta: " + vetLinha[0] + "             \t Nome científico: " + vetLinha[1]  + "             \t subgrupo: " + vetLinha[3] +"         \t ");
 	                        }
 	                        linha = buffer.readLine();
 					}
@@ -69,3 +70,4 @@ public class Exer1Controller {
 	
 		
 }
+
